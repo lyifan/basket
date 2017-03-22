@@ -1,0 +1,6 @@
+<div id="basket-product-list">
+	<rs-basket-product-details ng-repeat="product in $ctrl.products" product="product" 
+		on-delete="$ctrl.deleteProduct(product)" on-qty-change="$ctrl.changeQty(product, oldQty)"/>
+</div>
+
+<span>Total Quantity: </span><span>{{$ctrl.totalQty}}</span>

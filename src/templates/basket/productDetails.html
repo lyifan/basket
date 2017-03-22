@@ -1,0 +1,12 @@
+<div class="basket-product">
+	<div class="product-number">
+		<span>Product number: </span>
+		<span>{{$ctrl.product.productNumber}}</span>
+	</div>
+	<div class="product-quantity">
+		<span>Quantity: </span>
+		<span><input ng-model="$ctrl.product.quantity" ng-change="$ctrl.qtyChange('{{$ctrl.product.quantity}}')"/></span>
+	</div>
+	<button ng-click="$ctrl.delete()">Delete</button>
+</div>
+<hr/>
