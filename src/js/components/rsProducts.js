@@ -13,6 +13,7 @@
 
 		_rsBasketService.getProducts().then(function(response) {
 			ctrl.products = response.data;
+			calculateQty();
 		});
 
 		ctrl.$onInit = function() {

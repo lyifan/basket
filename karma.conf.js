@@ -21,7 +21,7 @@ module.exports = function(config) {
 		{ pattern: '../node_modules/angular-mocks/angular-mocks.js', watched: false },
 		'js/*.js',
 		'js/**/*.js',
-		'test/**/basket*[sS]pec.js',
+		'test/**/*[sS]pec.js',
 
 		'templates/**/*.html',
 		
